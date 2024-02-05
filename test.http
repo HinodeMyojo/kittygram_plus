@@ -1,0 +1,18 @@
+GET http://127.0.0.1:8000/cats/2/
+
+###
+
+POST http://127.0.0.1:8000/cats/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Котик",
+    "color": "#2AAB22",
+    "birth_year": 2015,
+    "owner": 1,
+    "achievements": [
+        {
+            "achievement_name": "поймал мышку"
+        }
+    ]
+}
